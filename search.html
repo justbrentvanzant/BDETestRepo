@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .topnav {
+        overflow: hidden;
+        background-color: #e9e9e9;
+      }
+
+      .topnav a {
+        float: left;
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 20px 14px;
+        text-decoration: none;
+        font-size: 17px;
+        width: 16.6%;
+      }
+
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      .topnav a.active {
+        background-color: #2196F3;
+        color: white;
+      }
+
+      .topnav input[type="text"] {
+        padding: 6px;
+        margin-top: 8px;
+        font-size: 17px;
+        border: none;
+      }
+
+      .search-container button {
+        padding: 6px 10px;
+        margin-top: 8px;
+        margin-right: 16px;
+        background: #ddd;
+        font-size: 17px;
+        border: none;
+        cursor: pointer;
+      }
+
+      .search-container button:hover {
+        background: #ccc;
+      }
+
+      @media screen and (max-width: 600px) {
+        .topnav .search-container {
+          float: none;
+        }
+        .topnav a,
+        .topnav input[type="text"],
+        .topnav .search-container button {
+          float: none;
+          display: block;
+          text-align: left;
+          width: 100%;
+          margin: 0;
+          padding: 14px;
+        }
+        .topnav input[type="text"] {
+          border: 1px solid #ccc;
+        }
+      }
+
+      div.title {
+        text-align: center;
+      }
+
+      div.search-container {
+        text-align: center;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: 100px 100px 100px;
+      }
+
+      .results {
+        text-align: center;
+      }
+
+      .container {
+        width: 100%;
+        height: 30em;
+        border: 5px solid rgb(111, 41, 97);
+        border-radius: 0.5em;
+        padding: 20px;
+        justify-content: space-between;
+        align-content: space-between;
+      }
+
+      .item {
+        background-color: gray;
+        border: 2px solid rgba(111, 41, 97, 0.5);
+        padding: 16px 16px;
+        text-align: center;
+        font-size: 25px;
+      }
+
+      .search-container input {
+        padding: 6px 10px;
+        margin-top: 8px;
+        margin-right: 16px;
+        background: #eef;
+        font-size: 17px;
+        border: none;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="topnav">
+      <a class="home" href="#home">Home</a>
+      <a class="calender" href="#calender">Calender</a>
+      <a class="notifications" href="#notifications">Notifications</a>
+      <a class="subscriptions" href="#subscriptions">Subscriptions</a>
+      <a class="active" href="#search">Search</a>
+      <a class="settings" href="#settings">Settings</a>
+    </div>
+
+    <div class="title" style="padding-left:16px">
+      <h2>Enter Text or Tags to Search</h2>
+    </div>
+    <div style="padding-left:16px" class="search-container">
+      <form action="/action_page.php">
+        <input type="text" placeholder="Search..." name="search" />
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
+
+    <div class="results">
+      <h3>Search Results...</h3>
+    </div>
+
+    <div class="container grid">
+      <div class="item">VGDC I</div>
+      <div class="item">VGDC II</div>
+      <div class="item">VGDC III</div>
+      <div class="item">VGDC IV</div>
+      <div class="item">VGDC V</div>
+      <div class="item">VGDC VI</div>
+      <div class="item">VGDC VII</div>
+      <div class="item">VGDC VIII</div>
+      <div class="item">VGDC IX</div>
+    </div>
+  </body>
+</html>
