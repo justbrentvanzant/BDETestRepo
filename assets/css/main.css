@@ -3445,7 +3445,7 @@ input, select, textarea {
 					font-family: 'Font Awesome 5 Free';
 					font-weight: 900;
 				}
-
+			
 				#header > nav > a[href="#menu"]:before {
 					content: '\f0c9';
 					display: block;
@@ -3489,7 +3489,108 @@ input, select, textarea {
 	}
 
 /* Menu */
+	#menu {
+		text-align: center;
+		height: 4em;
+		cursor: default;
+		padding-top: 0.5em;
+	}
 
+		#menu a {
+			position: relative;
+			display: inline-block;
+			color: #ffffff;
+			width: 1em;
+			height: 1em;
+			line-height: 0.9em;
+			font-size: 2.5em;
+			margin: 0 0.25em 0 0.25em;
+			opacity: 0.35;
+			outline: 0;
+			-moz-transition: opacity .25s ease-in-out;
+			-webkit-transition: opacity .25s ease-in-out;
+			-ms-transition: opacity .25s ease-in-out;
+			transition: opacity .25s ease-in-out;
+		}
+
+			#menu a.icon:before {
+				padding-right: 0;
+			}
+
+			#menu a:before {
+				font-size: 0.8em;
+			}
+
+			#menu a:after {
+				content: '';
+				display: block;
+				position: absolute;
+				left: 50%;
+				bottom: 100%;
+				margin-left: -0.5em;
+				border-bottom: solid 0em #ffffff;
+				border-left: solid 0.5em transparent;
+				border-right: solid 0.5em transparent;
+				-moz-transition: border-bottom-width .25s ease-in-out;
+				-webkit-transition: border-bottom-width .25s ease-in-out;
+				-ms-transition: border-bottom-width .25s ease-in-out;
+				transition: border-bottom-width .25s ease-in-out;
+			}
+	#menu a span {
+		   	
+			width: 120px;
+			background-color: #396362;
+			color: #fff;
+			text-align: center;
+			border-radius: 5px;
+			padding: 2px 0;
+			position: absolute;
+			z-index: 1;
+			font-size: 0.3em;
+			top: 150%;
+			left: 50%;
+			margin-left: -55px;
+			opacity: 0;
+	}
+	#menu a span:after {
+			content: '';
+			display: block;
+			position: absolute;
+			bottom: 100%;
+			left: 50%;
+			width:auto;
+			margin-left: -0.5em;
+			border-bottom: solid 0.6em #396362;
+			border-left: solid 0.6em transparent;
+			border-right: solid 0.6em transparent;
+			border-color: transparent transparent  #396362 transparent;
+	}
+
+	#menu a:hover {
+		opacity: 1.0;
+	}
+
+		#menu a:hover span {
+			opacity: 1.0;
+		}
+
+	#menu a.active {
+		opacity: 1.0;
+	}
+
+		#menu a.active:after {
+			border-bottom-width: 0.5em;
+		}
+
+	@media screen and (max-width: 980px) {
+
+		#menu a span {
+			display: none;
+		}
+
+	}
+
+/*
 	#menu {
 		background-color: #353535;
 		color: rgba(255, 255, 255, 0.5);
@@ -3696,7 +3797,7 @@ input, select, textarea {
 		box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.2);
 		visibility: visible;
 	}
-
+*/
 /* Banner */
 
 	#banner {
