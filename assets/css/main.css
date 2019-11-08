@@ -73,6 +73,31 @@ input, select, textarea {
 	appearance: none;
 }
 
+/* Calender */
+
+.calendar{}
+
+.calendar__week,
+.calendar__header {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);  
+}
+.calendar__week {
+  grid-auto-rows: 100px;
+  text-align: right;
+}
+
+.calendar__header {
+  grid-auto-rows: 50px;
+  align-items: center;
+  text-align: center;
+}
+
+.calendar__day {
+  padding: 16px;
+}
+
+
 /* Basic */
 
 	@-ms-viewport {
